@@ -1,10 +1,186 @@
 <html>
 <head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+	<style >
+
+#panel,#flip
+{
+padding:5px;
+text-align:center;
+background-color:#e5eecc;
+border:solid 1px #c3c3c3;
+}
+#panel
+{
+padding:50px;
+display:none;
+}
+
+	#page-wrap {
+     width: 800px;
+     margin: 0 auto;
+}
+	img.one {
+		padding: 5px;
+    float: left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10px;
+}
+li.two{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	padding-right: 250px;
+    display: inline;
+}
+li.one {
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	padding-top: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+    display: inline;
+}
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+a:active {
+    text-decoration: underline;
+    color: black;
+}
+	img.two {
+		float: right;
+	}
+	img.three
+	{
+		padding: 50px;
+		float: left;
+	}
+	img.four {
+    float: left;
+}
+
+	h1 {
+	
+	padding-left: 100px;
+	padding-top: 10px;
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 30px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 50;
+	line-height: 10px;
+}
+h3.one
+{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	padding-top: 20px;
+	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 8px;
+}
+
+p {
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+blockquote {
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714302062988px;
+}
+	</style>
 <title>
-Biswatex
+Biswa-Tex
 </title>
 </head>
 <body>
-WELCOME
+	<div id="page-wrap">
+	<img class="one" src="images/logo.png" height="75" width="75"><h1>Biswa Tex</h1>
+	<img class="two" src="images/hr_line.png" width= "700px" height ="5px" >
+	
+	<ul>
+  <li class="one"><a href="#home">Home</a></li>
+  <li class="one"><a href="#home">Offerings</a></li>
+  <li class="one"><a href="#news">Acchievements</a></li>
+  <li class="one"><a href="#contact">Contact</a></li>
+  <li class="one"><a href="#about">Join Us</a></li>
+</ul>
+<img src="images/cover.png">
+
+<h3 class="one"><u>Brief History of the Organization</u></h3>
+<p>
+	Since 1992 this organization has been at continueous service to the textile insustry of West-Bengal, namely Kolkata. Serving numerous clients on a domestic and international basis, we have the most integrated service techniques, fastest production unit we can prepare for you your expected product within the span of less than <span title="Terms And Conditions apply">12 hours*</span>. Motto is perfection, coupled with effeciency we have an unmatched lineup of perfectly shaped industry.
+</p>
+
+<h3 class="one"><u>Who we are</u> ?</h3>
+<p>
+	We, right now are undoubtedly the best silk-screen developers in the face of West Bengal. Our main motto is perfection and now pertaining to our advanced modernised gears, we are able to couple perfection with technology to produce the maximum possible output in the minimum possible time. You place your demands in the Morning, we deliver it to u by the <span title="Terms And Conditions apply">evening*</span>. We are not only considered about our sales but also our services. With us we gurentee full satisfaction of the customer, we are at your service till the very end.
+</p>
+<img class="two" src="images/hr_line.png" width= "800px" height ="5px" >
+<ul>
+	<li class="two">
+		<img src="images/featuring.png" title="Featured" width ="64px" height ="64px" class ="four">
+		 
+		 
+	</li>
+	<li class="two">
+		<img src="images/news.png" width ="54px" title="In The News" height ="54px">
+		 
+		 
+	</li>
+	<li class="two">
+		<img src="images/contact.png" width ="54px" title="Contact Us" height ="54px">
+		 
+		 
+	</li>
+	
+</ul>
+	<img class="two" src="images/hr_line.png" width= "800px" height ="5px" >
+	<ul>
+  <li class="one"><a href="#home">Home</a></li>
+  <li class="one"><a href="#home">Offerings</a></li>
+  <li class="one"><a href="#news">Acchievements</a></li>
+  <li class="one"><a href="#contact">Contact</a></li>
+  <li class="one"><a href="#about">Join Us</a></li>
+</ul>
+	<div align="right"><pre>Powered by BISWA TECHS</pre>
+	</div>
 </body>
 </html>
