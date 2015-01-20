@@ -1,8 +1,44 @@
 <html>
 <head>
+
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+		
+			$("#slideshow > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			},  4500);
+			
+		});
+	</script>
+
 	<style >
 
-
+	#slideshow { 
+		    margin: 20px auto; 
+		    position: relative; 
+		    width: 790px; 
+		    height: 200px; 
+		    padding: 10px; 
+		    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+		}
+		
+		#slideshow > div { 
+		    position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
 
 	#page-wrap {
      width: 800px;
@@ -117,6 +153,8 @@ pre {
 	line-height: 18.5714302062988px;
 }
 	</style>
+
+
 <link rel="icon"
 type="image/jpeg"
 href="images/logo.png">
@@ -126,7 +164,9 @@ Biswa-Tex
 </head>
 <body>
 	<div id="page-wrap">
-	<img class="one" src="images/logo.png" height="75" width="75"><h1>Biswa Tex</h1>
+	<a href="index.html">
+	<img title="Home" class="one" src="images/logo.png" height="75" width="75"></a><h1>Biswa Tex</h1>
+
 	<img class="two" src="images/hr_line.png" width= "700px" height ="5px" >
 	
 	<ul>
@@ -136,8 +176,23 @@ Biswa-Tex
   <li class="one"><a href="#contact">Contact</a></li>
   <li class="one"><a href="#about">Join Us</a></li>
 </ul>
-<img class="five" src="images/cover.png">
-
+<div id="slideshow">
+	   <div>
+	     <img width="790px" height="200px"src="images/im_5.png">
+	   </div>
+	   <div>
+	     <img width="790px" height="200px"src="images/im_1.png">
+	   </div>
+	   <div>
+	     <img width="790px" height="200px"src="images/im_2.png">
+	   </div>
+	   <div>
+	     <img width="790px" height="200px"src="images/im_3.png">
+	   </div>
+	   <div>
+	     <img width="790px" height="200px"src="images/im_4.png">
+	   </div>
+	</div>
 <h3 class="one"><u>Brief History of the Organization</u></h3>
 <p>
 	Since 1992 this organization has been at continueous service to the textile insustry of West-Bengal, namely Kolkata. Serving numerous clients on a domestic and international basis, we have the most integrated service techniques, fastest production unit we can prepare for you your expected product within the span of less than <span title="Terms And Conditions apply">12 hours*</span>. Motto is perfection, coupled with effeciency we have an unmatched lineup of perfectly shaped industry.
@@ -168,7 +223,7 @@ Biswa-Tex
 </ul>
 	<img class="two" src="images/hr_line.png" width= "800px" height ="5px" >
 	<ul>
-  <li class="one"><a href="#home">Home</a></li>
+  <li class="one"><a href="index.html">Home</a></li>
   <li class="one"><a href="#home">Offerings</a></li>
   <li class="one"><a href="#news">Acchievements</a></li>
   <li class="one"><a href="#contact">Contact</a></li>
