@@ -1,0 +1,493 @@
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+	<style >
+
+
+
+	#page-wrap {
+     width: 800px;
+     margin: 0 auto;
+     padding-left: 20px;
+     padding-right: 20px;
+     background: lightgrey;
+     padding-top: 5px;
+     border: double;
+     border-spacing: 10px;
+}
+	img.one {
+		padding: 5px;
+    float: left;
+}
+ul.one {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10px;
+}
+ul.two {
+    list-style-type: disc;
+    margin-left: 40px;
+    padding-top: 3px;
+}
+li.two{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	padding-right: 250px;
+    display: inline;
+}
+li.one {
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	padding-top: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+    display: inline;
+}
+li.three {
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+a:active {
+    text-decoration: underline;
+    color: black;
+}
+	img.two {
+		float: right;
+	}
+	img.three
+	{
+		padding: 50px;
+		float: left;
+	}
+	img.four {
+    float: left;
+}
+	img.five
+	{
+		padding-top: 20px;
+	}
+
+
+	h1 {
+	
+	padding-left: 100px;
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 30px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 50;
+	line-height: 10px;
+}
+h3.one
+{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	
+	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 8px;
+}
+
+p {
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+blockquote {
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714302062988px;
+}
+	</style>
+
+
+<link rel="icon"
+type="image/jpeg"
+href="images/logo.png">
+<title>
+Biswa-Tex
+</title>
+</head>
+<body>
+
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script>
+
+        jQuery(document).ready(function ($) {
+
+            var _SlideshowTransitions = [
+            //Fade in L
+                {$Duration: 1200, x: 0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade out R
+                , { $Duration: 1200, x: -0.3, $SlideOut: true, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade in R
+                , { $Duration: 1200, x: -0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade out L
+                , { $Duration: 1200, x: 0.3, $SlideOut: true, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+
+            //Fade in T
+                , { $Duration: 1200, y: 0.3, $During: { $Top: [0.3, 0.7] }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+            //Fade out B
+                , { $Duration: 1200, y: -0.3, $SlideOut: true, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+            //Fade in B
+                , { $Duration: 1200, y: -0.3, $During: { $Top: [0.3, 0.7] }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade out T
+                , { $Duration: 1200, y: 0.3, $SlideOut: true, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+
+            //Fade in LR
+                , { $Duration: 1200, x: 0.3, $Cols: 2, $During: { $Left: [0.3, 0.7] }, $ChessMode: { $Column: 3 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+            //Fade out LR
+                , { $Duration: 1200, x: 0.3, $Cols: 2, $SlideOut: true, $ChessMode: { $Column: 3 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+            //Fade in TB
+                , { $Duration: 1200, y: 0.3, $Rows: 2, $During: { $Top: [0.3, 0.7] }, $ChessMode: { $Row: 12 }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade out TB
+                , { $Duration: 1200, y: 0.3, $Rows: 2, $SlideOut: true, $ChessMode: { $Row: 12 }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+
+            //Fade in LR Chess
+                , { $Duration: 1200, y: 0.3, $Cols: 2, $During: { $Top: [0.3, 0.7] }, $ChessMode: { $Column: 12 }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+            //Fade out LR Chess
+                , { $Duration: 1200, y: -0.3, $Cols: 2, $SlideOut: true, $ChessMode: { $Column: 12 }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade in TB Chess
+                , { $Duration: 1200, x: 0.3, $Rows: 2, $During: { $Left: [0.3, 0.7] }, $ChessMode: { $Row: 3 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+            //Fade out TB Chess
+                , { $Duration: 1200, x: -0.3, $Rows: 2, $SlideOut: true, $ChessMode: { $Row: 3 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+
+            //Fade in Corners
+                , { $Duration: 1200, x: 0.3, y: 0.3, $Cols: 2, $Rows: 2, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $ChessMode: { $Column: 3, $Row: 12 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+            //Fade out Corners
+                , { $Duration: 1200, x: 0.3, y: 0.3, $Cols: 2, $Rows: 2, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $SlideOut: true, $ChessMode: { $Column: 3, $Row: 12 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+
+            //Fade Clip in H
+                , { $Duration: 1200, $Delay: 20, $Clip: 3, $Assembly: 260, $Easing: { $Clip: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade Clip out H
+                , { $Duration: 1200, $Delay: 20, $Clip: 3, $SlideOut: true, $Assembly: 260, $Easing: { $Clip: $JssorEasing$.$EaseOutCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade Clip in V
+                , { $Duration: 1200, $Delay: 20, $Clip: 12, $Assembly: 260, $Easing: { $Clip: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade Clip out V
+                , { $Duration: 1200, $Delay: 20, $Clip: 12, $SlideOut: true, $Assembly: 260, $Easing: { $Clip: $JssorEasing$.$EaseOutCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+                ];
+
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 1500,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideDuration: 800,                                //Specifies default duration (swipe) for slide in milliseconds
+
+                $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                    $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                    $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                },
+
+                $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                },
+
+                $ThumbnailNavigatorOptions: {                       //[Optional] Options to specify and enable thumbnail navigator or not
+                    $Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+
+                    $ActionMode: 1,                                 //[Optional] 0 None, 1 act by click, 2 act by mouse hover, 3 both, default value is 1
+                    $SpacingX: 8,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+                    $DisplayPieces: 10,                             //[Optional] Number of pieces to display, default value is 1
+                    $ParkingPosition: 360                          //[Optional] The offset position to park thumbnail
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$ScaleWidth(Math.max(Math.min(parentWidth, 800), 300));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+
+
+	<div id="page-wrap">
+	<a href="index.html">
+	<img title="Home" class="one" src="images/logo.png" height="75" width="75"></a><h1>Biswa Tex</h1>
+
+	<img class="two" src="images/hr_line.png" width= "700px" height ="5px" >
+	
+	<ul class="one">
+  <li class="one"><a href="index.html">Home</a></li>
+  <li class="one"><a href="events.html"><b>Events</b></a></li>
+  <li class="one"><a href="about_us.html">About Us</a></li>
+  <li class="one"><a href="#contact">Contact</a></li>
+  <li class="one"><a href="#about">Join Us</a></li>
+</ul>
+<br><br>
+
+	<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px;
+        height: 456px; background: #191919; overflow: hidden;">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(images/loading.gif) no-repeat center center;
+                top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+        </div>
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 356px; overflow: hidden;">
+            <div>
+                <img u="image" src="images/alila/01.jpg" />
+                <img u="thumb" src="images/alila/thumb-01.jpg" />
+            </div>
+            <div>
+                <img u="image" src="images/alila/02.jpg" />
+                <img u="thumb" src="images/alila/thumb-02.jpg" />
+            </div>
+            <div>
+                <img u="image" src="images/alila/03.jpg" />
+                <img u="thumb" src="images/alila/thumb-03.jpg" />
+            </div>
+            <div>
+                <img u="image" src="images/alila/04.jpg" />
+                <img u="thumb" src="images/alila/thumb-04.jpg" />
+            </div>
+            <div>
+                <img u="image" src="images/alila/05.jpg" />
+                <img u="thumb" src="images/alila/thumb-05.jpg" />
+            </div>
+            <div>
+                <img u="image" src="images/alila/06.jpg" />
+                <img u="thumb" src="images/alila/thumb-06.jpg" />
+            </div>
+            <div>
+                <img u="image" src="images/alila/07.jpg" />
+                <img u="thumb" src="images/alila/thumb-07.jpg" />
+            </div>
+            <div>
+                <img u="image" src="images/alila/08.jpg" />
+                <img u="thumb" src="images/alila/thumb-08.jpg" />
+            </div>
+            <div>
+                <img u="image" src="images/alila/09.jpg" />
+                <img u="thumb" src="images/alila/thumb-09.jpg" />
+            </div>
+            <div>
+                <img u="image" src="images/alila/10.jpg" />
+                <img u="thumb" src="images/alila/thumb-10.jpg" />
+            </div>
+            
+            <div>
+                <img u="image" src="images/alila/11.jpg" />
+                <img u="thumb" src="images/alila/thumb-11.jpg" />
+            </div>
+            <div>
+                <img u="image" src="images/alila/12.jpg" />
+                <img u="thumb" src="images/alila/thumb-12.jpg" />
+            </div>
+        </div>
+        
+        <!-- Arrow Navigator Skin Begin -->
+        <style>
+            /* jssor slider arrow navigator skin 05 css */
+            /*
+            .jssora05l              (normal)
+            .jssora05r              (normal)
+            .jssora05l:hover        (normal mouseover)
+            .jssora05r:hover        (normal mouseover)
+            .jssora05ldn            (mousedown)
+            .jssora05rdn            (mousedown)
+            */
+            .jssora05l, .jssora05r, .jssora05ldn, .jssora05rdn
+            {
+            	position: absolute;
+            	cursor: pointer;
+            	display: block;
+                background: url(../img/a17.png) no-repeat;
+                overflow:hidden;
+            }
+            .jssora05l { background-position: -10px -40px; }
+            .jssora05r { background-position: -70px -40px; }
+            .jssora05l:hover { background-position: -130px -40px; }
+            .jssora05r:hover { background-position: -190px -40px; }
+            .jssora05ldn { background-position: -250px -40px; }
+            .jssora05rdn { background-position: -310px -40px; }
+        </style>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 158px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 158px; right: 8px">
+        </span>
+        <!-- Arrow Navigator Skin End -->
+        
+        <!-- Thumbnail Navigator Skin Begin -->
+        <div u="thumbnavigator" class="jssort01" style="position: absolute; width: 800px; height: 100px; left:0px; bottom: 0px;">
+            <!-- Thumbnail Item Skin Begin -->
+            <style>
+                /* jssor slider thumbnail navigator skin 01 css */
+                /*
+                .jssort01 .p           (normal)
+                .jssort01 .p:hover     (normal mouseover)
+                .jssort01 .pav           (active)
+                .jssort01 .pav:hover     (active mouseover)
+                .jssort01 .pdn           (mousedown)
+                */
+                .jssort01 .w {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .jssort01 .c {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 68px;
+                    height: 68px;
+                    border: #000 2px solid;
+                }
+
+                .jssort01 .p:hover .c, .jssort01 .pav:hover .c, .jssort01 .pav .c {
+                    background: url(../img/t01.png) center center;
+                    border-width: 0px;
+                    top: 2px;
+                    left: 2px;
+                    width: 68px;
+                    height: 68px;
+                }
+
+                .jssort01 .p:hover .c, .jssort01 .pav:hover .c {
+                    top: 0px;
+                    left: 0px;
+                    width: 70px;
+                    height: 70px;
+                    border: #fff 1px solid;
+                }
+            </style>
+            <div u="slides" style="cursor: move;">
+                <div u="prototype" class="p" style="position: absolute; width: 72px; height: 72px; top: 0; left: 0;">
+                    <div class=w><div u="thumbnailtemplate" style=" width: 100%; height: 100%; border: none;position:absolute; top: 0; left: 0;"></div></div>
+                    <div class=c>
+                    </div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- Thumbnail Navigator Skin End -->
+       
+    </div>
+
+
+<h3 class="one"><u><b>Events at Biswa-Tex</u><br><br><br><br><br>Biswa-Tex's Foundation Day</b></h3>
+<p>
+	Since the very first year of our establishment we have been celebrating this once day, the foundation day of this firm(1st of April), it always is entertaining to co-memorate the past with their collegues, Biswa-Tex provides them the chance. Starts off as a domestic cultural festival. Making a stage for talents exhibited by the employees and their families, each participant is awarded for their effective participation in the concert. The lunch on that day is complimentary and every employee and their families are invited. After a sumptuous meal there awaits a concert by called upon stars. Finally the day ends with a token of love and gratitude from the Biswa-Tex family to their employees as an answer to their year long hard work. Gifts are graded according to seniority.
+</p>
+
+<h3 class="one"><b>Annual Trip</b></h3>
+<p>
+	Every year Biswa-Tex arranges a scheduled trip in the winters to any nearby location, the cost of this trip is beared fully by the management, another initiative of the firm's management to express gratitude to its employees for the effort they put in. The trip includes free fooding, lodging and transportation. We will care for you if you ensure to care for us. It is another process by which this firm ensures harmonical co-existance between the employees.
+</p>
+
+<h3 class="one"><b>Other Events</b></h3>
+<p>
+    Among other events we have celebration of different kind of pujas. Vishwakarma Puja, Saraswati Puja and few others. On all these days the lunch is organised by the firm. On the day of Viswakarma puja it is a real feat of the members. In all these we ensure to invite all the family members of the emplouyees.<br><br>
+</p>
+
+<h3 class="one"><b><u>AWARDS</u></b></h3>
+<p>Along with all these, different awards are allocated for the employees of Biswa-Tex graded upon their efficiency. There are awards such as :-</p>
+    <ul class="two">
+        <li class="three" >Employee of the Month;</li>
+        <li class="three">Employee of the Year;</li>
+        <li class="three">Most regular Employee;</li>
+        <li class="three">Most diligent employee;</li>
+        <li class="three">Most productive employee;</li>
+    </ul><p>
+    Its nice to keep up a competitive spirit among the co-workers, aided by this initiative of ours.
+</p>
+
+<img class="two" src="images/hr_line.png" width= "800px" height ="5px" >
+<ul class="one">
+	<li class="two">
+		<img src="images/featuring.png" title="Featured" width ="64px" height ="64px" class ="four">
+		 
+		 
+	</li>
+	<li class="two">
+		<img src="images/news.png" width ="54px" title="In The News" height ="54px">
+		 
+		 
+	</li>
+	<li class="two">
+		<img src="images/contact.png" width ="54px" title="Contact Us" height ="54px">
+		 
+		 
+	</li>
+	
+</ul>
+	<img class="two" src="images/hr_line.png" width= "800px" height ="5px" >
+	<ul class="one">
+  <li class="one"><a href="index.html">Home</a></li>
+  <li class="one"><a href="events.html"><b>Events</b></a></li>
+  <li class="one"><a href="about_us.html">About Us</a></li>
+  <li class="one"><a href="#contact">Contact</a></li>
+  <li class="one"><a href="#about">Join Us</a></li>
+</ul>
+	<div align="right"><pre>Powered by BISWA TECHS</pre>
+	</div>
+</body>
+</html>

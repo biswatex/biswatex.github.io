@@ -1,0 +1,625 @@
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+		
+			$("#slideshow > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			},  3000);
+			
+		});
+	
+			$(function() {
+		
+			$("#images_right > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#images_right > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#images_right');
+			},  4000);
+			
+		});
+			$(function() {
+		
+			$("#images_left > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#images_left > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#images_left');
+			},  4000);
+			
+		});
+
+			$(function() {
+		
+			$("#images_right_1 > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#images_right_1 > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#images_right_1');
+			},  4000);
+			
+		});
+
+			$(function() {
+		
+			$("#images_left_1 > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#images_left_1 > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#images_left_1');
+			},  4000);
+			
+		});
+			$(function() {
+		
+			$("#images_right_2 > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#images_right_2 > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#images_right_2');
+			},  4000);
+			
+		});
+
+			$(function() {
+		
+			$("#images_left_2 > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#images_left_2 > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#images_left_2');
+			},  4000);
+			
+		});
+
+	</script>
+
+	<style >
+
+	#slideshow { 
+		    margin: 20px auto; 
+		    position: relative; 
+		    width: 790px; 
+		    height: 200px; 
+		    padding: 10px; 
+		    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+		}
+
+	#images { 
+			margin-top: 5px;
+		    margin-right: 10px; 
+		    float: left;
+		    position: relative; 
+		    width: 350px; 
+		    height: 350px; 
+		    padding: 3px; 
+		    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+		}
+
+	#images_right { 
+			margin: 5px auto;
+		    margin-left: 10px; 
+		    float: right;
+		    position: relative; 
+		    width: 500px; 
+		    height: 333px; 
+		    padding: 10px; 
+		    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+		}
+
+		#images_right_1 { 
+			margin: 5px auto;
+		    margin-left: 10px; 
+		    float: right;
+		    position: relative; 
+		    width: 500px; 
+		    height: 333px; 
+		    padding: 10px; 
+		    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+		}
+	#images_left { 
+			margin-top: 5px;
+		    margin-right: 10px; 
+		    margin-bottom: 5px;
+		    float: left;
+		    position: relative; 
+		    width: 500px; 
+		    height: 333px; 
+		    padding: 10px; 
+		    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+		}
+
+		#images_left_1 { 
+			margin-top: 5px;
+		    margin-right: 10px; 
+		    margin-bottom: 5px;
+		    float: left;
+		    position: relative; 
+		    width: 500px; 
+		    height: 333px; 
+		    padding: 10px; 
+		    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+		}
+
+		#images_left_2 { 
+			margin-top: 5px;
+		    margin-right: 10px; 
+		    margin-bottom: 5px;
+		    float: left;
+		    position: relative; 
+		    width: 500px; 
+		    height: 333px; 
+		    padding: 10px; 
+		    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+		}
+
+		#images_right_2 { 
+			margin: 5px auto;
+		    margin-left: 10px; 
+		    float: right;
+		    position: relative; 
+		    width: 500px; 
+		    height: 333px; 
+		    padding: 10px; 
+		    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+		}
+		
+		#slideshow > div { 
+		    position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+
+		#images_right > div{
+			position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+
+		#images_right_1 > div{
+			position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+
+		#images_left_1 > div{
+			position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+
+		#images_right_2 > div{
+			position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+
+		#images_left_2 > div{
+			position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+
+		#images_left > div{
+			position: absolute; 
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px; 
+		    bottom: 10px; 
+		}
+
+	#page-wrap {
+     width: 800px;
+     margin: 0 auto;
+     padding-left: 20px;
+     padding-right: 20px;
+     background: lightgrey;
+     padding-top: 5px;
+     border: double;
+     border-spacing: 10px;
+     clear: both;
+}
+	img.one {
+		padding: 5px;
+    float: left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10px;
+}
+li.two{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	padding-right: 250px;
+    display: inline;
+}
+li.one {
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	padding-top: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+    display: inline;
+}
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+a:active {
+    text-decoration: underline;
+    color: black;
+}
+	img.two {
+		float: right;
+	}
+	img.three
+	{
+		padding: 50px;
+		float: left;
+	}
+	img.four {
+    float: left;
+}
+	img.five
+	{
+		padding-top: 20px;
+	}
+	img.six
+	{
+		float:right;
+	}
+
+	h1 {
+	
+	padding-left: 100px;
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 30px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 50;
+	line-height: 10px;
+}
+h3.one
+{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	
+	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 8px;
+}
+
+p {
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+blockquote {
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714302062988px;
+}
+	</style>
+
+
+<link rel="icon"
+type="image/jpeg"
+href="images/logo.png">
+<title>
+Biswa-Tex
+</title>
+</head>
+<body>
+	<div id="page-wrap">
+	<a href="index.html">
+	<img title="Home" class="one" src="images/logo.png" height="75" width="75"></a><h1>Biswa Tex</h1>
+
+	<img class="two" src="images/hr_line.png" width= "700px" height ="5px" >
+	
+	<ul>
+  <li class="one"><a href="index.html">Home</a></li>
+  <li class="one"><a href="events.html">Events</a></li>
+  <li class="one"><a href="about_us.html"><b>About Us</b></a></li>
+  <li class="one"><a href="#contact">Contact</a></li>
+  <li class="one"><a href="#about">Join Us</a></li>
+</ul>
+<div id="slideshow">
+	   <div>
+	     <img width="790px" height="200px"src="images/des_1.gif">
+	   </div>
+	   <div>
+	     <img width="790px" height="200px"src="images/des_2.gif">
+	   </div>
+	   <div>
+	     <img width="790px" height="200px"src="images/des_3.gif">
+	   </div>
+	   <div>
+	     <img width="790px" height="200px"src="images/des_4.gif">
+	   </div>
+	   <div>
+	     <img width="790px" height="200px"src="images/des_5.gif">
+	   </div>
+	</div>
+<h3 class="one"><u></br></br><b>From The C.E.O.'s Desk</b></u></h3>
+<div id="images"><img src="images/chairman.gif" class="six"></div><p>
+We are exceedingly honoured as we, right now are the leading silk-screen developer in this state or to be specific we are even the unbeaten best in this whole country, we continue to hold this position now for more than a decade. We have kept up such a high reputation just on the basis of our motto to serve customers untill full satisfaction. Perfection is our primary goal which these days combines with out modern day techs to produce the penultimate result, our products. With the help of efficient labour and mordernised technology we are able to keep this kind of reputation going in the market. </br></br>
+We are recognised by our clients all over the world just due to our perfection and quality. Our executives are well trained with the knowlegde of textile designing that gives us an upperhand in the case of designing. We also have a fresh set of designers that will give shape to your ideas, make necessary modifications and make it them the best they can look. These designers are even capable enough to build up designs from a scratch. Their finesse combined with the technology we have make us one of the best textile developers in this whole country. Finally, and most importantly security and privacy is out prime policy. Our clients presently entrust us with cent percent responsibility of their needs and ideas, that is specifically because of this policy of ours. With us your ideas are safe. 
+<div style="clear:both;"></div></p></br><br/>
+
+<h3 class="one"><b><u>Why come to the Biswatex Family ?</u></b></h3><br><br>
+<h3 class="one" ><b>We are Technologically Advanced</b></h3>
+<div id="images_right">
+	<div>
+	     <img width="500px" height="333px" src="images/com_1.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/com_2.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/com_3.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/com_4.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/com_5.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/com_6.gif">
+	   </div>
+	</div>
+	   <p>
+	   	The technology we use here is undoubtedly unmatchable by any other firm manufacturing the same, here we have high end gizmos to compliment our skills at perfection and efficiency. We at Biswa-Tex have a working knowledge of each of the technologies we use. We have a line of of highly skilled computer artists each equiped with a high end machine powerful enough to produce 20 plates a day. <br><br>Here at Biswa-Tex we have a set of efficient printers, which help us in maintaining perfection. We have printers of multiple sizes that help us present to our client the condition of the product when its finally printed. Our specially designed engraver machines are our most cherished and valuable piece of technology. It empowers us to be picture perfect as it engraves the exact design onto the silk screen. It enhances our production capacity and enables us to produce over 200 plates daily. Be there any kind of rush you can trust us with it.<br><br>
+	   	Our technicians have made the whole setup go wireless, each and every machine here at Biswa-Tex is connected with the help of Wi-Fi to one another, be it printing, be it copying, no one needs to get up, neither has anyone to bother about wires.<br><br>
+	   	We have in our workshop availability of in-house repairs of old frames that make the production more cost efficient for all out clients.
+
+<div style="clear:both;"></div></p></br><br/>
+<h3 class="one" align="right"><b>An efficient set of Self-Dependent employees</b></h3>
+<div id="images_left">
+	<div>
+	     <img width="500px" height="333px" src="images/eff_1.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/eff_2.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/eff_3.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/eff_4.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/eff_5.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/eff_6.gif">
+	   </div>
+	</div>
+
+<p>Employees here at Biswa-Tex are efficient at whatever they do. They are specially trained for each of their roles. Each of them are assigned specific roles such that they need not get trained in all kinds of roles. Here, we also have sets of all kind of instruments that doesnt let the work stop for any kind of emmergancies. Our staff here at Biswa-Tex have continually been awarder for efficiency and loyalty, that keeps up in them a spirit to improve upon themselves, excel upon their ownselves. <br><br>We here have a full time electrical engineer deployed in our firm, who caters to our daily needs. All technical problems are sorted out right there and right then so that our work stays unpaused. Along with a fully functional and efficient lineup of manual textile artists, each one of them experienced in the field of textile designing.
+
+<div style="clear:both;"></div></p><br><br>
+
+<h3 class="one" ><b>Our Infrastructure</b></h3>
+<div id="images_right_1">
+		<div>
+	     <img width="500px" height="333px" src="images/infra_1.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/infra_2.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/infra_3.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/infra_4.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/infra_5.gif">
+	   </div>
+	</div>
+	   <p>
+	   Here at Biswa-Tex, we provide a world class infrastructure with a super efficient and clean environment for working, along with advanced technologies and gizmos to compliment their talents. Regular deployment of cleaning units on the whole firm to keep them clean and keep a workable environment. <br><br>
+	   Our setup is away from the hullabaloo of any kind of industrial belt making it calm and a better place to concentrate on work and draw out the optimim amount of production in the minimal possible time. Our technology here, specifically the engraver machine our most priced asset is a firm contributor to the firm's strong infrastructure. In one word we can say that we are always mordernising, unlike most such firms, we develop everyday making our workplace, a more advanced and mordernised one. Its the abode of Textile Designing.
+
+<div style="clear:both;"></div></p></br><br/>
+
+<h3 class="one" align="left"><b>Work here Never Stops</b></h3>
+<div id="images_left_1">
+	<div>
+	     <img width="500px" height="333px" src="images/wns_1.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/wns_2.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/wns_3.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/wns_4.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/wns_5.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/wns_6.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/wns_7.gif">
+	   </div>
+	</div>
+
+<p>We can proudly say that here at Biswa-Tex, we are very proud to say that work never stops. The supplies we have in our storage inside the firm's campus, do not let us to get delayed even by a minimal amount of time. From huge amount of needed chemicals to nylon stretched frames, we have everything ready and usable. We have our storages stacked with printer ink cartridges and toners, to support us at the times we run out of them accidentaly. Nextly, we alse have all kinds of computer peripherals kept with grace in large quantities to suffice our emmergancy needs. <br><br>
+	We even have support for our network needs, peripherals to suffice our needs of intra-connectivity. We have a fully maintained notice board telling us the quantity of each stock we have available to us at that particular instant of time, our officials have each loaded stock application to intercommunicate the stock levels without physically talking. Finallly, we have a company vehicle with an employee upon it to 24x7 to cater to the needs of the people here.
+
+<div style="clear:both;"></div></p><br><br>
+
+<h3 class="one" ><b>Dicipline and Safety</b></h3>
+<div id="images_right_2">
+		<div>
+	     <img width="500px" height="333px" src="images/dic_1.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/dic_6.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/dic_2.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/dic_3.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/dic_4.gif">
+	   </div>
+	    <div>
+	     <img width="500px" height="333px" src="images/dic_5.gif">
+	   </div>
+	    <div>
+	     <img width="500px" height="333px" src="images/saf_1.gif">
+	   </div>
+	    <div>
+	     <img width="500px" height="333px" src="images/saf_2.gif">
+	   </div>
+	    <div>
+	     <img width="500px" height="333px" src="images/saf_3.gif">
+	   </div>
+	</div>
+	   <p>
+	   Our reputed efficiency comes with a price. The price is of decipline. Employees and Staff at Biswa-Tex are well organized and diciplined, and under the constant supervision of its managers all the time. There are close circuit cameras spread all over the campus and managers are assigned to constantly analyse each of the footages. Digitally recorded entry and exit of the staff and employees here by the use of Biometric Fingerprinting. To enhance our productivity a daily worksheet is maintained by the gate-keeper at the end of each day. Statutory warnings and instructions stuck as posters all over the campus to remind the staff and employees the obvious details they tend to forget. <br><br>
+	   And finally, the safety, safety of our employees is a major concern for us, we have first aid kits instlled at all locations to cater to any kind of emmergancy. We have a liscense to contain the inflamable products we contain, and for the same reason have installed Fire Extinguishers spread all over the campus.
+
+<div style="clear:both;"></div></p></br><br/>
+
+<h3 class="one" align="left"><b>Finally,<br><br><br>Labour Welfare</b></h3>
+<div id="images_left_2">
+	<div>
+	     <img width="500px" height="333px" src="images/lab_1.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/lab_2.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/lab_3.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/lab_4.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/lab_5.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/lab_6.gif">
+	   </div>
+	   <div>
+	     <img width="500px" height="333px" src="images/lab_7.gif">
+	   </div>
+	</div>
+
+<p>Biswa Tex has always been the best at catering to the employees needs before they even realize they need it. every year the Biswa-Tex's management organises an event on the foundation day of the organization(or on any nearby favourable days). On that day there is a stage decorated and arranged for a cultural function comprising of the employees and their family. Their family members and they themselves portray different talents like singing, dancing, poetry, etc. on the stage<a href="events.html">(Click here for more info)</a>.
+	<br><br>
+Refreshments and fooding, Biswa-Tex takes extra care of its employees by providing them with lunch at the firm itself by a caterer, funded by the firm. Along with lunch we take care So as to provide our employees tea/coffee twice a day in the winter and rejuvinating glucose water in the killer heat of summer.<br><br>
+Adjacant park for the employees to freshen up during work. They can pay a visit anytime without hampering their work, to re-freshen themselves up.
+
+<div style="clear:both;"></div></p><br><br>
+
+<img class="two" src="images/hr_line.png" width= "800px" height ="5px" >
+<ul>
+	<li class="two">
+		<img src="images/featuring.png" title="Featured" width ="64px" height ="64px" class ="four">
+		 
+		 
+	</li>
+	<li class="two">
+		<img src="images/news.png" width ="54px" title="In The News" height ="54px">
+		 
+		 
+	</li>
+	<li class="two">
+		<img src="images/contact.png" width ="54px" title="Contact Us" height ="54px">
+		 
+		 
+	</li>
+	
+</ul>
+	<img class="two" src="images/hr_line.png" width= "800px" height ="5px" >
+	<ul>
+  <li class="one"><a href="index.html">Home</a></li>
+  <li class="one"><a href="events.html">Events</a></li>
+  <li class="one"><a href="about_us.html"><b>About Us</b></a></li>
+  <li class="one"><a href="#contact">Contact</a></li>
+  <li class="one"><a href="#about">Join Us</a></li>
+</ul>
+	<div align="right"><pre>Powered by BISWA TECHS</pre>
+	</div>
+</body>
+</html>
