@@ -1,8 +1,5 @@
 <html>
 <head>
-
-
-
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 	<script>
 		$(function() {
@@ -16,9 +13,10 @@
 			    .fadeIn(1000)
 			    .end()
 			    .appendTo('#slideshow');
-			},  4500);
+			},  3000);
 			
 		});
+
 	</script>
 
 	<style >
@@ -31,6 +29,19 @@
 		    padding: 10px; 
 		    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
 		}
+
+	#images { 
+			margin-top: 5px;
+		    margin-right: 10px; 
+		    margin-left: 5px;
+		    float: left;
+		    position: relative; 
+		    width: auto; 
+		    height: auto; 
+		    padding: 3px; 
+		}
+
+	
 		
 		#slideshow > div { 
 		    position: absolute; 
@@ -41,6 +52,14 @@
 		}
 
 
+		#center_all
+		{
+			width: auto;
+			height: auto;
+			padding-left: 20px;
+		}
+		
+
 	#page-wrap {
      width: 800px;
      margin: 0 auto;
@@ -50,6 +69,7 @@
      padding-top: 5px;
      border: double;
      border-spacing: 10px;
+     clear: both;
 }
 	img.one {
 		padding: 5px;
@@ -87,6 +107,13 @@ a:hover {
     color: black;
 }
 
+li.three {
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    padding-top: 4px;
+    padding-right: 20px;
+    list-style-type: square;
+}
+
 a:active {
     text-decoration: underline;
     color: black;
@@ -106,7 +133,10 @@ a:active {
 	{
 		padding-top: 20px;
 	}
-
+	img.six
+	{
+		float:right;
+	}
 
 	h1 {
 	
@@ -171,38 +201,48 @@ Biswa-Tex
 	<img class="two" src="images/hr_line.png" width= "700px" height ="5px" >
 	
 	<ul>
-  <li class="one"><a href="index.html"><b>Home</b></a></li>
+  <li class="one"><a href="index.html">Home</a></li>
   <li class="one"><a href="events.html">Events</a></li>
   <li class="one"><a href="about_us.html">About Us</a></li>
   <li class="one"><a href="contact_us.html">Contact</a></li>
-  <li class="one"><a href="join_us.html">Join Us</a></li>
+  <li class="one"><a href="join_us.html"><b>Join Us</b></a></li>
 </ul>
 <div id="slideshow">
 	   <div>
-	     <img width="790px" height="200px"src="images/im_5.gif">
+	     <img width="790px" height="200px"src="images/des_1.gif">
 	   </div>
 	   <div>
-	     <img width="790px" height="200px"src="images/im_1.gif">
+	     <img width="790px" height="200px"src="images/des_2.gif">
 	   </div>
 	   <div>
-	     <img width="790px" height="200px"src="images/im_2.gif">
+	     <img width="790px" height="200px"src="images/des_3.gif">
 	   </div>
 	   <div>
-	     <img width="790px" height="200px"src="images/im_3.gif">
+	     <img width="790px" height="200px"src="images/des_4.gif">
 	   </div>
 	   <div>
-	     <img width="790px" height="200px"src="images/im_4.gif">
+	     <img width="790px" height="200px"src="images/des_5.gif">
 	   </div>
 	</div>
-<h3 class="one"><u><b>Brief History of the Organization</b></u></h3>
-<p>
-	Since 1992 this organization has been at continueous service to the textile insustry of West-Bengal, namely Kolkata. Serving numerous clients on a domestic and international basis, we have the most integrated service techniques, fastest production unit we can prepare for you your expected product within the span of less than <span title="Terms And Conditions apply">12 hours*</span>. Motto is perfection, coupled with effeciency we have an unmatched lineup of perfectly shaped industry.
-</p>
+<div id="center_all">
 
-<h3 class="one"><u><b>Who we are</u> ?</b></h3>
-<p>
-	We, right now are undoubtedly the best silk-screen developers in the face of West Bengal. Our main motto is perfection and now pertaining to our advanced modernised gears, we are able to couple perfection with technology to produce the maximum possible output in the minimum possible time. You place your demands in the Morning, we deliver it to you by the <span title="Terms And Conditions apply">evening*</span>. We are not only considered about our sales but also our services. With us we gurentee full satisfaction of the customer, we are at your service till the very end.
-</p>
+<p>Dear User,<br><br>We are glad that you are interested to join us. Please leave your information below along with the reason of your enquiry. We will try to contact u at the earliest.<br><br>With regards,<br>Biswa-Tex.</p><br><br>
+
+	<form action="http://formspree.io/biswadeepam@gmail.com" method="POST" >
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+</form>
+
+
+</div>
+
+<div style="clear:both;"></div></p><br><br>
+
 <img class="two" src="images/hr_line.png" width= "800px" height ="5px" >
 <ul>
 	<li class="two">
@@ -224,7 +264,7 @@ Biswa-Tex
 </ul>
 	<img class="two" src="images/hr_line.png" width= "800px" height ="5px" >
 	<ul>
-  <li class="one"><a href="index.html"><b>Home</b></a></li>
+  <li class="one"><a href="index.html">Home</a></li>
   <li class="one"><a href="events.html">Events</a></li>
   <li class="one"><a href="about_us.html">About Us</a></li>
   <li class="one"><a href="contact_us.html">Contact</a></li>
